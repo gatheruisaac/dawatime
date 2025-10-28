@@ -1,0 +1,76 @@
+.medication-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.medication-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.medication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.medication-name {
+  font-size: 1.5rem;
+  color: #2c5f7c;
+  margin: 0;
+  font-weight: 600;
+}
+
+.medication-dosage {
+  background-color: #e8f4f8;
+  color: #2c5f7c;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.medication-times {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.times-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.times-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.time-badge {
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .medication-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .medication-name {
+    font-size: 1.3rem;
+  }
+}

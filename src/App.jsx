@@ -1,3 +1,4 @@
+import MedicationList from './components/medication/MedicationList'
 import './App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       </header>
       
       <main className="app-main">
-        <p>Coming soon...</p>
+        <MedicationList />
       </main>
     </div>
   )
